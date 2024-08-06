@@ -1,0 +1,65 @@
+
+body{
+    font-family: "Nanum Brush Script", sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    margin: 10px;
+}
+
+header{
+    font-family: "Seaweed Script", sans-serif;
+    font-weight: bold;
+    font-size: 1.65em;
+    margin: 5px;
+    margin-left: 15px;
+}
+.p1{
+    margin-left: 15px;
+}
+.pirate-ship-box{
+    background-color: rgb(255, 255, 255);
+    width: 375px;
+    height: 325px;
+    float: right;
+    border: 1px solid rgb(121, 121, 121);
+    box-shadow: 10px 10px lightgray;
+    transform: rotate(4deg);
+    margin: 25px;
+    text-align: center;
+
+}
+
+#pirate-ship{
+    width: 350px;
+    height: 250px;
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+.p2{
+    margin-right: 15px;
+}
+
+.treasure-box{
+    background-color: rgb(255, 255, 255);
+    width: 375px;
+    height: 325px;
+    float: left;
+    border: 1px solid rgb(121, 121, 121);
+    box-shadow: 10px 10px lightgray;
+    transform: rotate(-4deg);
+    margin: 25px;
+    text-align: center;
+}
+
+#treasure{
+    width: 350px;
+    height: 250px;
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+
+

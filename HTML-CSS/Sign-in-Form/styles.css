@@ -1,0 +1,47 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(206, 205, 207);
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: (-50%, -50%);
+}
+
+.login-box{
+    background-color: rgb(188, 218, 241);
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    width: 300px;
+}
+
+h2{
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    
+}
+
+h3{
+    margin: 0;
+    color: rgb(150, 150, 150);
+    font-size: 24px;
+    
+}
+
+input{
+    display: block;
+     width: 80%;
+}
+
+button{
+    background-color: darkgoldenrod;
+}
+
