@@ -1,0 +1,7 @@
+.box{
+    border: 2px solid;
+    height: auto;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}

@@ -1,0 +1,15 @@
+
+.outer-box{
+    border: 2px dashed cornflowerblue;
+    height: 500px;
+}
+
+.inner-box{
+    height: 100%;
+    width: 50%;
+    background-color: cornflowerblue;
+    border: 20px solid purple;
+    margin: auto;
+    box-sizing: border-box;
+}
+

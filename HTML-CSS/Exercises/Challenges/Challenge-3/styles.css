@@ -1,0 +1,49 @@
+
+.box{
+    height: 500px;
+    border: 2px dashed cornflowerblue;
+
+}
+.red{
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    
+}
+
+.orange{
+    background-color: orange;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    float: right;
+    position: relative;
+    bottom: 30%;
+    right: 1%;
+}
+
+.green{
+    background-color: green;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: relative;
+    top: 37%;
+    left: 85%;
+}
+
+.yellow{
+    background-color: yellow;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-top: 1%;
+    margin-left: 1%;
+}

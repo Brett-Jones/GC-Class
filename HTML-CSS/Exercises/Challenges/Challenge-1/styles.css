@@ -1,0 +1,16 @@
+
+.box{
+    height: 500px;
+    border: 2px dashed cornflowerblue;
+    transform: -50, -50;
+}
+
+.circle{
+    background-color: cornflowerblue;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 13%;
+    left: 36%;
+}
