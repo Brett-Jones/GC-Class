@@ -86,6 +86,7 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
+    
   }
   
   .top-nav{
@@ -106,6 +107,7 @@ footer {
 
   .hire-us{
     width: 75px;
+    margin-right: 20px;
   }
 
   main{
