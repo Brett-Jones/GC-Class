@@ -1,0 +1,79 @@
+/* *{
+    border: 2px solid lightslategray;
+} */
+
+body{
+    background-color: red;
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    width: 75%;
+    
+}
+
+label{
+    border: none;
+}
+
+input, button{
+    border-radius: 10px;
+    line-height: 20px;
+}
+
+.target{
+    display: none;
+}
+
+/* Code below is for desktop */
+
+@media only screen and (min-width: 800px) {
+    
+    *{
+        border: 2px solid lightslategray;
+    }
+
+    body{
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .outer{
+        height: 135px;
+        width: 135px;
+        background-color: red;
+        border-radius: 50%;
+    }
+
+    .middle{
+        height: 135px;
+        width: 135px;
+        background-color: red;
+        border-radius: 50%;
+    }
+
+    .inner{
+        height: 135px;
+        width: 135px;
+        background-color: red;
+        border-radius: 50%;
+    }
+
+}
