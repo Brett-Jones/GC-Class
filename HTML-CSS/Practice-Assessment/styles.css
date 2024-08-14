@@ -1,6 +1,6 @@
 
     body{
-        background-color: rgb(156, 148, 148);
+        background-color: red;
         height: 100vh;
         margin: 0;
         display: flex;
@@ -30,7 +30,6 @@
         padding: 20px;
         border-radius: 10px;
         width: 75%;
-        
     }
 
     label{
@@ -54,7 +53,7 @@
     
 
     body{
-        background-color: rgb(117, 116, 116);
+        background-color: red;
         margin: 0;
         padding: 0;
         display: flex;
