@@ -1,79 +1,111 @@
-/* *{
-    border: 2px solid lightslategray;
-} */
 
-body{
-    background-color: red;
-    height: 100vh;
-    width: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-}
+    body{
+        background-color: red;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
-form{
-    display: flex;
-    flex-direction: column;
-    background-color: aliceblue;
-    padding: 20px;
-    border-radius: 10px;
-    width: 75%;
-    
-}
+    main{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
-label{
-    border: none;
-}
+    form{
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        padding: 20px;
+        border-radius: 10px;
+        width: 75%;
+        
+    }
 
-input, button{
-    border-radius: 10px;
-    line-height: 20px;
-}
+    label{
+        border: none;
+    }
 
-.target{
-    display: none;
-}
+    input, button{
+        border-radius: 10px;
+        line-height: 20px;
+    }
+
+    .target{
+        display: none;
+    }
+
 
 /* Code below is for desktop */
 
 @media only screen and (min-width: 800px) {
+
     
-    *{
-        border: 2px solid lightslategray;
-    }
 
     body{
-        background-color: black;
+        background-color: red;
         margin: 0;
         padding: 0;
-        height: 100vh;
-        width: 100vh;
         display: flex;
         flex-direction: row;
     }
 
+    main{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+    }
+
+    form{
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        padding: 20px;
+        border-radius: 10px;
+        width: 35%;
+        margin: 0;
+    }
+
+    .target {
+        background-color: black;
+        width: 60%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
 
     .outer{
-        height: 135px;
-        width: 135px;
+        height: 300px;
+        width: 300px;
         background-color: red;
         border-radius: 50%;
+        position: absolute;
+        
     }
 
     .middle{
-        height: 135px;
-        width: 135px;
-        background-color: red;
+        height: 200px;
+        width: 200px;
+        background-color: white;
         border-radius: 50%;
+        position: absolute;
     }
 
     .inner{
-        height: 135px;
-        width: 135px;
+        height: 100px;
+        width: 100px;
         background-color: red;
         border-radius: 50%;
+        position: absolute;
     }
 
 }
