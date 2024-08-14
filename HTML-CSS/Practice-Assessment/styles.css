@@ -1,6 +1,6 @@
 
     body{
-        background-color: red;
+        background-color: rgb(156, 148, 148);
         height: 100vh;
         margin: 0;
         display: flex;
@@ -15,6 +15,12 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+    }
+
+    .form-container{
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
 
     form{
@@ -48,7 +54,7 @@
     
 
     body{
-        background-color: red;
+        background-color: rgb(117, 116, 116);
         margin: 0;
         padding: 0;
         display: flex;
@@ -58,19 +64,23 @@
     main{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         width: 100%;
         margin: 0;
     }
 
+    .form-container{
+        display: flex;
+        width: 40%;
+        justify-content: center;
+    }
+
     form{
-        background-color: red;
         display: flex;
         flex-direction: column;
         background-color: aliceblue;
         padding: 20px;
         border-radius: 10px;
-        width: 35%;
-        margin: 0;
     }
 
     .target {
@@ -80,7 +90,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0;
+        
     }
 
     .outer{
