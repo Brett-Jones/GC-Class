@@ -1,24 +1,23 @@
 
-function checkScope() {
-    if(true){
-        let blockVariable = " I am in a block";
-        console.log(blockVariable);
-    }
+const firstName = "Brett";
+const lastName = "Jones";
+const fullName = `${firstName + " " + lastName}`;
 
-    console.log(blockVariable);
+console.log(fullName);
+
+let population = 620000;
+
+console.log(population);
+
+console.log(population * 3)
+
+const javaScriptIsCool = true;
+
+for(let i = 1; i <= 5; i++) {
+    console.log(i)
+};
+
+for (let i = 0; i < 5; i++) {
+    console.log(i)
 }
-
-checkScope();
-
-function hoistedFunction() {
-    console.log('This function is hoisted!!!!')
-}
-
-hoistedFunction();
-
-console.log(varVariable);
-var varVariable = 'This is a var Variable';
-
-console.log(letVariable);
-let letVariable = 'This is a let variable';
 
