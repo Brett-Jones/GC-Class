@@ -21,16 +21,41 @@ while (count < 10) {
 }
 console.log(count);
 
-//Had to comment them out to avoid forever loop
+Using the same "let count = 1;" as above for Do While below
 
-// do {
-//     console.log("Count is " + count);
-//     count += 1;
-// }
-// while (count <= 10);
+do {
+    console.log("Count is " + count);
+    count += 1;
+}
+while (count <= 10);
 
-// do {
-//     console.log("Count is " + count);
-//     count -= 1;
-// }
-// while (count <= 10);
+do {
+    console.log("Count is " + count);
+    count -= 1;
+}
+while (count <= 10);
+
+
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for(let number of numbers) {
+    console.log(number)
+}
+
+
+// Extended Challenge:
+
+let greeting = prompt("Provide a word");
+
+
+for (let i = greeting.length; i < 10; i++) {
+    greeting+= " ";
+}
+
+console.log(greeting)
+
+
+
+
+
