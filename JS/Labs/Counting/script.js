@@ -21,7 +21,7 @@ while (count < 10) {
 }
 console.log(count);
 
-Using the same "let count = 1;" as above for Do While below
+// Using the same "let count = 1;" as above for Do While below
 
 do {
     console.log("Count is " + count);
@@ -34,7 +34,6 @@ do {
     count -= 1;
 }
 while (count <= 10);
-
 
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
