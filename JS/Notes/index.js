@@ -22,3 +22,13 @@ var varVariable = 'This is a var Variable';
 console.log(letVariable);
 let letVariable = 'This is a let variable';
 
+
+
+
+
+
+
+
+
+
+
