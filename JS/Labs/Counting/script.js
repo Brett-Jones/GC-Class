@@ -15,25 +15,27 @@ while (count < 10) {
 }
 console.log(count);
 
-while (count < 10) {
+while (count > 1) {
     console.log(count);
     count -= 1;
 }
 console.log(count);
 
-// Using the same "let count = 1;" as above for Do While below
+ let counter = 1;
 
 do {
-    console.log("Count is " + count);
-    count += 1;
+    console.log(counter);
+    counter += 1;
 }
-while (count <= 10);
+while (counter <= 10);
+
+ let counts = 10;
 
 do {
-    console.log("Count is " + count);
-    count -= 1;
+    console.log(counts);
+    counts -= 1;
 }
-while (count <= 10);
+while (counts >= 1);
 
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
