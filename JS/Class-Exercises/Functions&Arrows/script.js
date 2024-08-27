@@ -81,5 +81,57 @@ const doubleNum = (num) => {
 let total = doubleNum(5);
 console.log(total);
 
+// function expression, this makes addFiveFunction
+//  not visable outside this function
+
+const addFive = function addFiveFunction(number) {
+    return number + 5;
+}
+
+console.log(addFive(10))
+
+// function doesnt have a name, this allows us name this function later
+let operation = function(number){
+    return number
+}
+
+operation = function(number) {
+    return number * 2
+}
+
+/* why are function expressions useful?
+this allows us to use the same function
+ in different ways
+example code
+user{
+fName: "Kevin"
+member: true
+}
+user.member
+
+*/
+
+let calculatDiscount;
+
+if(user.ismember){
+    calculatDiscount = function(price) {
+        return price * 0.9;
+    } 
+} else{
+    calculatDiscount = function(price) {
+        return price;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
