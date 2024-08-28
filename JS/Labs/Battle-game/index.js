@@ -23,27 +23,31 @@ const logDeath = (winner, loser) => {
 }
 
 const isDead = (health) => {
-    let alive = health <= 0 ? true : false;
-    return alive;
+    let dead = health <= 0 ? true : false;
+    return dead;
 }
 
 const fight = (player1, player2, player1Health, player2Health) => {
-    while(true){
-        attacker === chooseOption(player1, player2)
+    while(player1Health > 0 || player2Health > 0){
+        const attacker = chooseOption(player1, player2);
         if(attacker === player1){
             let player2Health = attackPlayer(player2Health);
-        } else if(logHealth(player2, player2Health)){
+            logHealth(player2, player2Health);
+            if(isDead(player2Health)){
+                logDeath(player1, player2);
+                break;
+            }
+        }else() {
             
         }
     }
+        
     
-    for(let i = 0; i < 10; i++) {
-
-    }
 }
 
 
 
+// how would you write out condition where both players have health
 
 
 

@@ -101,7 +101,7 @@ operation = function(number) {
 
 /* why are function expressions useful?
 this allows us to use the same function
- in different ways
+in different ways
 example code
 user{
 fName: "Kevin"
