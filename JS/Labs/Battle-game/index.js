@@ -1,5 +1,3 @@
-"use strict";
-
 const randomDamage = () => {
     let damage = Math.floor(Math.random() * 10) + 1;
     return damage;
@@ -37,24 +35,18 @@ const fight = (player1, player2, player1Health, player2Health) => {
                 logDeath(player1, player2);
                 break;
             }
-        }else() {
-            
+        }else {
+            player1 === attackPlayer(player1Health);
+            logHealth(player1, player1Health);
         }
+            if(isDead(player1Health)){
+                logDeath(player2, player1)
+                break;
+            }
     }
-        
-    
 }
 
+const player1 = prompt("Enter Name of Player 1");
+const player2 = prompt("Enter Name of Player 2");
 
-
-// how would you write out condition where both players have health
-
-
-
-
-
-
-
-
-
-
+fight(player1, player2);
