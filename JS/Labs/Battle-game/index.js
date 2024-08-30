@@ -1,3 +1,5 @@
+"use strict";
+
 const randomDamage = () => {
     let damage = Math.floor(Math.random() * 10) + 1;
     return damage;
@@ -29,14 +31,14 @@ const fight = (player1, player2, player1Health, player2Health) => {
     while(player1Health > 0 || player2Health > 0){
         const attacker = chooseOption(player1, player2);
         if(attacker === player1){
-            let player2Health = attackPlayer(player2Health);
+            player2Health = attackPlayer(player2Health);
             logHealth(player2, player2Health);
             if(isDead(player2Health)){
                 logDeath(player1, player2);
                 break;
             }
         }else {
-            player1 === attackPlayer(player1Health);
+            player1Health = attackPlayer(player1Health);
             logHealth(player1, player1Health);
         }
             if(isDead(player1Health)){
@@ -46,7 +48,17 @@ const fight = (player1, player2, player1Health, player2Health) => {
     }
 }
 
-const player1 = prompt("Enter Name of Player 1");
-const player2 = prompt("Enter Name of Player 2");
+// const player1 = prompt(`Enter Name of Player 1 ${player1.join(', ')}`);
+// const player2 = prompt(`Enter Name of Player 2 ${player2.join(', ')}`);
 
-fight(player1, player2);
+// fight(player1, player2);
+
+
+
+
+
+
+
+
+
+

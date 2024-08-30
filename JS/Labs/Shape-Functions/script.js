@@ -16,7 +16,7 @@ let circumference = getCircumferenceOfCircle(5);
 console.log(circumference);
 
 function getAreaOfSquare(side) {
-    const area = side * side * side * side
+    const area = side * side;
     return area;
 }
 
