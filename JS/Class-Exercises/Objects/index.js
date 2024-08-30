@@ -59,6 +59,27 @@ for (let i = 0; i < students.length; i++){
 
 // function in side an object you put "this." in front of it
 
+// A callback function is that a function that 
+// calls back a function that does something
+
+const numbers = [1, 2, 3, 4, 5];
+
+// function display(number){
+//     console.log(number);
+// }
+
+numbers.forEach(function(number){
+    console.log(number);
+    }
+);
+
+
+
+
+
+
+
+
 
 
 
