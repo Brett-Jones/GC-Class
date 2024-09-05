@@ -11,36 +11,36 @@ let lifeEvents = [
 ];
 
 if(pineApplePizza === true){
-    console.log(`My name is ${fullName} and I like pineapples on pizza. 
-    I am currently ${age} years old & my birthday is ${birthday}.`)
-} else{ console.log(`My name is ${fullName} and I'm not into pineapples on pizza. 
-        I am currently ${age} years old & my birthday is ${birthday}.`)
+    console.log(`My name is ${fullName} and I like pineapples on pizza. I am currently ${age} years old & my birthday is ${birthday}.`)
+} else{ console.log(`My name is ${fullName} and I'm not into pineapples on pizza. I am currently ${age} years old & my birthday is ${birthday}.`)
 }
 
 for (let i = 0; i < lifeEvents.length; i++) {
-    console.log(lifeEvents[i])
+    console.log(lifeEvents[i]);
 }
 
 let counter = 0;
 //          (How to make a random number)(Max num)(Min num)
 let randomNumber = Math.floor(Math.random() * 10) + 1;
-console.log(randomNumber)
+console.log(randomNumber);
 
-while (counter < 10){
+while (counter < 5) {
     if(randomNumber != 5){
+        console.log(`${randomNumber}  !== 5`);
         counter++;
-        console.log("!== 5");
     }else{
         counter++;
         console.log(`5===5. It took ${counter} iterations to randomly generate number 5.`);
     }
-    break;
+        break;
 }
 
-let a = 0, j = 0;
-while (a < 30) {
-    a++;
-    j += a;
-}
+
+
+
+
+
+
+
 
 
