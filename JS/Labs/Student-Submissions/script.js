@@ -23,7 +23,16 @@ const submissions = [
 ]
 
 const addSubmission = (array, newName, newScore) => {
+    let array = [];
     
+    
+    newName = "Jake";
+    newScore = 78;
+    let a
+    submissions.push(newName, newScore,)
+
+
+    console.log(submissions);
 }
 
 
