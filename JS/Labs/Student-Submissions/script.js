@@ -22,28 +22,30 @@ const submissions = [
     }
 ]
 
-const addSubmission = (array, newName, newScore) => {
-    let array = [];
+const addSubmission = (submissions, newName, newScore) => {
     
-    
-    newName = "Jake";
-    newScore = 78;
-    let a
-    submissions.push(newName, newScore,)
-
-
-    console.log(submissions);
+    let newstudent = {
+        name: "Jake",
+        score: 78,
+        passed: (newScore >= 60) ? true : false
+    }
+   console.log(submissions.push(newstudent))
 }
 
+console.log(addSubmission);
 
 
+// const deleteSubmissionByIndex = (submissions, index) => {
+//     submissions.splice(2,index);
+// }
 
+// const deleteSubmissionByName = (submissions, name) => {
+//     submissions.splice(2,name);
+// }
 
-
-
-
-
-
+// const editSubmission = (submissions, index, score) => {
+//     submissions.splice(2,index, score);
+// }
 
 
 

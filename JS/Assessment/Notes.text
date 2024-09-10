@@ -1,0 +1,65 @@
+PRACTICE ASSESSMENT 2
+Task: Declare a number of functions that use loops and conditionals. Also, create a dealership array and several functions that work with that array.
+
+Build Specifications: 
+Create a file named dealership.js. Complete all of the following tasks in that file. Each task is worth one point unless otherwise noted. NOTE: You may write additional code in dealership.js if you like. It will not count against you. For example, it’s probably a good idea to call the functions you make to test them.
+
+Declare a function named printTens
+Parameter(s): n/a
+Functionality: uses a loop to log, one by one, the tens from 10 to 100. (i.e. 10, 20, 30 … 100)
+
+Declare a function named countUntilTens
+Parameter(s):  step
+Functionality: uses a while loop to log, one by one, the numbers starting at step and adding step each time. It stops when the number is divisible by ten. For example, if step is 4, it will print 4, 8, 12, 16, 20. It will stop at 20 because 20 is divisible by 10.
+
+Declare a function named hasVowels
+Parameter(s):  word
+Functionality: returns true if the provided word contains one or more vowels and false if it contains no vowels.
+
+Declare a function named testTemperature
+Parameter(s):  desiredTemp, actualTemp
+Functionality: Given a desiredTemp and an actualTemp, tell the heating & cooling system what to do. Log one of these three things:
+“Run A/C”
+“Run heat”
+“Stand by”
+
+
+
+Declare a variable named dealership that is initialized to an array with the following objects:
+
+make
+model
+year
+hybrid
+Toyota
+Prius
+2020
+true
+Toyota
+Prius
+2021
+true
+
+Ford
+F-150
+2015
+false
+
+Ferrari
+Enzo
+2004
+false
+
+
+[2 points] Declare a function named findCars
+Parameter(s): arrayOfCars, model
+Functionality: When called, this function will return an array of all the cars from the arrayOfCars argument that have the specified model argument. If there are no cars that have that model, return an empty array.
+
+[2 points] Declare a function named addCar
+Parameter(s): arrayOfCars, make, model, hybrid
+Functionality: construct an object and add it to the beginning of the arrayOfCars. Use the parameters for the values, but always set the year to 2021. The object should have the same property names as the objects already in the array.
+
+Declare a function named areThereAnyHybridsForSale
+Parameter(s): arrayOfCars
+Functionality: when called, this function will return true if there is a hybrid car in the arrayOfCars argument and false otherwise.
+
