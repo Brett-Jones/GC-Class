@@ -22,30 +22,80 @@ const submissions = [
     }
 ]
 
-const addSubmission = (submissions, newName, newScore) => {
+const addSubmission = (array, newName, newScore) => {
     
-    let newstudent = {
-        name: "Jake",
-        score: 78,
-        passed: (newScore >= 60) ? true : false
+    let newStudent = {
+        name: newName,
+        score: newScore,
+        passed: newScore >= 60 ? true : false
     }
-   console.log(submissions.push(newstudent))
+    array.push(newStudent);
 }
 
-console.log(addSubmission);
+addSubmission(submissions, 'Jim', 72);
+
+console.log(submissions);
 
 
-// const deleteSubmissionByIndex = (submissions, index) => {
-//     submissions.splice(2,index);
-// }
 
-// const deleteSubmissionByName = (submissions, name) => {
-//     submissions.splice(2,name);
-// }
+const deleteSubmissionByIndex = (array, index) => {
+    submissions.splice(array, index);
+}
+deleteSubmissionByIndex(submissions, 1);
 
-// const editSubmission = (submissions, index, score) => {
-//     submissions.splice(2,index, score);
-// }
+console.log(submissions);
+
+
+
+deleteSubmissionByName = (array, name) => {
+    submissions.splice(array, name);
+}
+
+deleteSubmissionByName(submissions, 'Jane');
+
+console.log(submissions);
+
+
+
+const editSubmission = (array, index, score) => {
+
+    let checkScore = array.find(studentScore => studentScore.score) 
+        return studentScore
+    
+    
+    
+    
+    
+    // [index] >= 60 ? true : false
+    // if(checkScore = true){
+    //     return array.passed = true
+    // } else {
+    //     return 'Did not pass'
+    // }
+}
+let checkScore = editSubmission(submissions, 2, 61);
+
+console.log(checkScore);
+
+
+
+
+
+
+
+
+
+
+findSubmissionByName = (array, name) => {
+    return array.find(findName => findName === name) || 'Student not found.';
+}
+
+
+
+
+
+
+
 
 
 
