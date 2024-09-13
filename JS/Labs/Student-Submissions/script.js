@@ -22,6 +22,7 @@ const submissions = [
     }
 ]
 
+
 const addSubmission = (array, newName, newScore) => {
     
     let newStudent = {
@@ -58,21 +59,11 @@ console.log(submissions);
 
 
 const editSubmission = (array, index, score) => {
-
-    let checkScore = array.find(studentScore => studentScore.score) 
-        return studentScore
-    
-    
-    
-    
-    
-    // [index] >= 60 ? true : false
-    // if(checkScore = true){
-    //     return array.passed = true
-    // } else {
-    //     return 'Did not pass'
-    // }
+    let object = array[index];
+    object.score = score;
+    object.passed = score >= 60;
 }
+
 let checkScore = editSubmission(submissions, 2, 61);
 
 console.log(checkScore);
@@ -81,6 +72,22 @@ console.log(checkScore);
 
 
 
+
+
+
+
+
+const findAverageScore = (array) => {
+    let sum = 0;
+    array.forEach(student => {
+        sum += student.score;
+    });
+    return sum % array.length;
+}
+
+findAverageScore(submissions);
+
+console.log
 
 
 
