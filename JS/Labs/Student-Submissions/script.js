@@ -78,27 +78,27 @@ const submissions = [
 
 
 const findLowestScore = (array) => {
-    let sum = 0;
-    array.find(studentsLowestScore => {
-        sum = studentsLowestScore.score;
-        if(sum < studentsLowestScore.score)
-            return sum
+    let lowestScore = array[0].score;
+    array.forEach(student => {
+        if(lowestScore > student.score){
+            lowestScore = student.score;
+        }
     });
-    return sum;
+    return lowestScore;
 }
 
 console.log(findLowestScore(submissions));
 
 
-const findAverageScore = (array) => {
-    let sum = 0;
-    array.forEach(student => {
-        sum += student.score;
-    });
-    return sum % array.length;
-}
+// const findAverageScore = (array) => {
+//     let sum = 0;
+//     array.forEach(student => {
+//         sum += student.score;
+//     });
+//     return sum % array.length;
+// }
 
-console.log(findAverageScore(submissions));
+// console.log(findAverageScore(submissions));
 
 
 
