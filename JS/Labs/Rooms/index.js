@@ -1,10 +1,14 @@
 
 class Room {
-    constructor (name, length, width) {
+
+    available = true;
+    capacity = 15;
+
+    constructor (name, length, width,) {
         this.name = name;
         this.length = length;
         this.width = width;
-        this.available = true;
+        
     }
 //you can override this.available if need be 
     getArea(){
