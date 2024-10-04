@@ -6,154 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group Project 1</title>
     <link rel="stylesheet" href="styles.css">
-    <!--This is the font of the company name-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">   
 </head>
-
 <body>
-
    <header class="header">
-
-        <!--The image below is a placeholder. Please change the image source to the actual logo, then 
-            change the ALT property to "logo". Once that is done successfully, delete this comment - Thanks!-->
-    
-        <a class="brand-header" href="home.html">
-            <img class="logo" src="Images\Logo\Logo.png" alt="Dealership Logo" width="500" height="600">
-            <h1>Dreads & Deals Auto</h1> 
-        </a>
-
-        <div id="hamburger-menu">
-
-            <!--When the hamburger button below is clicked on, it should display the list items 
-                "Favorites" and "Cart", and if you click on the button again, it should hide the list items.
-                Use JavaScript to achieve this!-->
-            
-            <button class="hamburger-button"> ☰ </button>
-            
-                <div class="nav-links">
-                    
-                    <ul>
-
-                        <!--The list items below should be hidden at the beginning.
-                            Then when the hamburger button is clicked, the list items
-                            display. Achieve this through using JavaScript!-->
-                        
-                        <li><a href="favorites.html">Favorites</a></li>
-                        <li><a href="checkout.html">Cart</a></li>
-                    
-                    </ul>
-                </div>
+        <div class="topnav">
+            <a class="brand-header" href="home.html">
+                <img id="logo" src="Assets\Icons\Logo.png" alt="Dealership Logo" width="90" height="120">
+            </a>
+            <h1>Dreads & Deals Auto</h1>
         </div>
-
+        <!-- <span onclick="openModal()">Checkout</span> -->
+        <div id="checkout">    
+            <span id="cartText" onclick="openModal()">
+                <img id="cart" src="Assets\Icons\Checkout.png" alt="Cart" width="90" height="90">
+                CHECKOUT
+            </span>
+        </div>
     </header>
+    <main>       <!--The div sections below currently contain the slider for the mobile version.-->  
+        <div id="container"></div>
+        <!-- Modal Structure -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal()">&times;</span>
+                <h2>Scroll down for your total</h2>
+                <p>(to start from scratch, refresh your page)</p>
+                <div id="cartContainer"></div>
+                <h4 id="subtotal"></h4>
+                <h4 id="salesTax"></h4>
+                <h4 id="totalDue"></h4>
+                <div id="payment">
+                    <form>
+                        <p>Please select your method of payment:</p>
+                        <input type="radio" id="cash" name="payment-type" onclick="togglePaymentMethod()" checked>
+                        <label for="cash">Cash</label><br>
+                        <input type="radio" id="card" name="payment-type" onclick="togglePaymentMethod()">
+                        <label for="card">Card</label><br>
+                    </form>
+                    
+                    <div id="cashMath">
+                        <label id="cashTendered">Cash Amount Tendered:</label>
+                        <input id="cashInput" type="number" min="0.00" max="500000.00" placeholder="0.00">
+                        <button id="calculateChange" onclick="tenderCash()">Submit Payment</button>
+                    </div>
+                    
+                    <div id="creditCard" style="display: none;">
+                        <h2>Enter Your Credit Card Information</h2>
+                        <form onsubmit="event.preventDefault();">
+                            <label for="cardNumber">Card Number:</label>
+                            <input type="text" id="cardNumber" maxlength="16" placeholder="Enter Card Number" required><br><br>
+                            <label for="expiration">Expiration Date (MM/YY):</label>
+                            <!-- <input type="text" id="expiration" maxlength="5" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" required><br><br> -->
+                            <input type="text" id="expiration" name="month" placeholder="MM" maxlength="2" size="2" />
+                            <span>/</span>
+                            <input type="text" id="expiration" name="year" placeholder="YY" maxlength="2" size="2" /><br><br>
+                            <label for="cvv">CVV:</label>
+                            <input type="text" id="cvv" maxlength="3" placeholder="123" pattern="^\d{3}$" required><br><br>
+                            <button id="checkout-submit" type="submit"  onclick="tenderCredit()">Submit Payment</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="receipt">
+                    Dreads + Deals Auto
+                    <br /><br />
+                    Thank you so much for your business!
+                    <br /><br />
+                    Item Count: <span id="itemCount"></span>
+                    <br /><br />
+                    Amount Paid: <span id="paid"></span>
+                    <br /><br />
+                    Amount Due: <span id="total"></span>
+                    <br /><br />
+                    Change Received: <span id="change"></span>
 
-<main>      <!--This main area will be where the mobile version's car slideshow goes.
-                It will also be where the grid of cars goes in the desktop version!-->   
-    
-    
-            <!--The symbols below need functions. When clicked, the heart adds the
-                shown car to your "favorites" list. When clicked, the dollar sign 
-                adds your selection to the shopping cart-->
-
-        <ul class="img-container1">
-
-            <li class="car-img">
-                <img src="Images\Cars\BMW\BMW-Front.jpg" alt="BMW" width="200" height="150">
-                <p>Make: BMW Model: 840i</p>
-                <p>Year: 2018 Color: Black</p>
-            </li>
-            
-            <li class="car-img">
-                <img src="Images\Cars\BMW\BMW-Front.jpg" alt="BMW" width="200" height="150">
-                <p>Make: BMW Model: 840i</p>
-                <p>Year: 2018 Color: Black</p>
-            </li>
-
-            <!-- <li class="car-img"></li>
-                <img src="Images\Cars\BMW\BMW-Front.jpg" alt="BMW" width="200" height="150">
-                <p>Make: BMW Model: 840i</p>
-                <p>Year: 2018 Color: Black</p>
-            </li>
-
-            <li class="car-img"></li>
-                <img src="Images\Cars\BMW\BMW-Front.jpg" alt="BMW" width="200" height="150">
-                <p>Make: BMW Model: 840i</p>
-                <p>Year: 2018 Color: Black</p>
-            </li> -->
-
-        </ul>   
-         
-        <!-- <ul class="img-container2">
-
-            <li class="car-img">
-                <img src="Images\Cars\BMW\BMW-Front.jpg" alt="BMW" width="200" height="150">
-                <p>Make: BMW Model: 840i</p>
-                <p>Year: 2018 Color: Black</p>
-            </li>
-            
-            <li class="car-img">
-                <img src="Images\Cars\BMW\BMW-Front.jpg" alt="BMW" width="200" height="150">
-                <p>Make: BMW Model: 840i</p>
-                <p>Year: 2018 Color: Black</p>
-            </li>
-
-            <li class="car-img"></li>
-                <img src="Images\Cars\BMW\BMW-Front.jpg" alt="BMW" width="200" height="150">
-                <p>Make: BMW Model: 840i</p>
-                <p>Year: 2018 Color: Black</p>
-            </li>
-
-            <li class="car-img"></li>
-                <img src="Images\Cars\BMW\BMW-Front.jpg" alt="BMW" width="200" height="150">
-                <p>Make: BMW Model: 840i</p>
-                <p>Year: 2018 Color: Black</p>
-            </li>
-
-        </ul>    -->
-
-        <!-- <ul class="img-container3">
-
-            <li class="car-img">
-                <img src="Images\Cars\BMW\BMW-Front.jpg" alt="BMW" width="200" height="150">
-                <p>Make: BMW Model: 840i</p>
-                <p>Year: 2018 Color: Black</p>
-            </li>
-            
-            <li class="car-img">
-                <img src="Images\Cars\BMW\BMW-Front.jpg" alt="BMW" width="200" height="150">
-                <p>Make: BMW Model: 840i</p>
-                <p>Year: 2018 Color: Black</p>
-            </li>
-
-            <li class="car-img"></li>
-                <img src="Images\Cars\BMW\BMW-Front.jpg" alt="BMW" width="200" height="150">
-                <p>Make: BMW Model: 840i</p>
-                <p>Year: 2018 Color: Black</p>
-            </li>
-
-            <li class="car-img"></li>
-                <img src="Images\Cars\BMW\BMW-Front.jpg" alt="BMW" width="200" height="150">
-                <p>Make: BMW Model: 840i</p>
-                <p>Year: 2018 Color: Black</p>
-            </li>
-
-        </ul>    -->
-
-
-    <a href="#"><p class="heart">&#9829;</p></a>
-
-    <a href="#"><p class="dollarSign">$</p></a>
-</main>
-
+                    <div id="cardInfo">
+                        <br /><br />
+                        Paid with card: <span id="lastFour"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">     
+        <img id="footer-icons" src="Assets\Icons\Socials.png" alt="Socials">
+            <p class="copyright">Dreads And Deals Auto LLC.- 2024 All Rights Reserved. &copy;User Agreement
+                | Financial and Other Privacy Notices | Do Not Sell My Info
+                | Code of Conduct | Responsible Disclosure | Accessibility</p>
+    </footer>
+    <script src="slider.js"></script>
 </body>
-
-<footer class="footer">     <!--Nothing will change with the footer functionally. Only the CSS will change!
-                                When the footer CSS has reached it's final style, we can delete this comment-->
-
-    <p class="copyright">Dreads And Deals Auto LLC.- 2024 All Rights Reserved. &copy;</p>
-
-</footer>
-
 </html>
