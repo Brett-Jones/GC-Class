@@ -49,10 +49,10 @@ const students = [
 // if you are using a object long-term assign it (let/const)
 // if its one time then just calling the Object itself
 
-for (let i = 0; i < students.length; i++){
-    const student = student[i];
-    console.log(student.age);
-}
+// for (let i = 0; i < students.length; i++){
+//     const student = student[i];
+//     console.log(student.age);
+// }
 
 // "this." means the current piece of code/current scope
 // gives direction to know where to reference in scope
