@@ -21,7 +21,7 @@ function deleteProperty(obj, key){
 }
 
 
-module.export = {getProperty, updateProperty, deleteProperty};
+module.exports = {getProperty, updateProperty, deleteProperty};
 
 
 

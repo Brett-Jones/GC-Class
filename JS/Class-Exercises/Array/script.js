@@ -26,11 +26,11 @@ let fruits = ['Apple', 'Banana', 'Cherry', 'Mango', 'Orange', 'Grape', 'Elderber
 
 // let removedFruits = fruits.splice(-2, 2);
 
-// fruits.forEach(
-//     function(fruit){
-//         console.log(fruit);
-//     }
-// )
+fruits.forEach(
+    function(fruit){
+        console.log(fruit);
+    }
+)
 
 
 let colors = ["Red", "Blue", "Green"];
