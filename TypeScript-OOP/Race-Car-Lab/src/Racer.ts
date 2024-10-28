@@ -8,7 +8,15 @@ export interface Racer {
     isFuelEmpty(): boolean;
 }
 
-  
+const findRacersWithEmptyFuel = (racers: Racer[]) => {
+
+    racers.forEach((racer: Racer) =>{
+        if(racer.isFuelEmpty()){
+            return racers;
+        } 
+    });
+    findRacersWithEmptyFuel(racers);
+}
 
 
 
