@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvest Right Measurement Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <h1>Harvest Right Weight Calculator</h1>
+        <div id="tray-Size">
+            <h2>Select Tray Size</h2>
+            <form>
+                <input type="radio" id="sm-trays" name="fav_language" value="sm-trays">
+                <label for="sm-trays">Small Trays - (7.75" W x 14" L x 0.75" H)</label><br>
+                <input type="radio" id="med-trays" name="fav_language" value="med-trays">
+                <label for="med-trays">Medium Trays - (7.5" W x 18" L x 0.75" H)</label><br>
+                <input type="radio" id="lg-trays" name="fav_language" value="lg-trays">
+                <label for="lg-trays">Large Trays - (9" W x 20.5" L x 0.75" H)</label>
+                </form> 
+        </div>
+        <div id="loaded-tray-weight">
+            <h3>Enter Loaded Trays Weight Before Freeze Drying</h3><br>
+            <form id="tray-weight"><br>
+                <input input type="text" id="tray1" name="tray1">
+                <label for="sm-trays">Tray 1</label><br>
+                <br>
+                <input input type="text" id="tray2" name="tray2">
+                <label for="sm-trays">Tray 2</label><br>
+                <br>
+                <input input type="text" id="tray3" name="tray3">
+                <label for="sm-trays">Tray 3</label><br>
+                <br>
+                <input input type="text" id="tray4" name="tray4">
+                <label for="sm-trays">Tray 4</label><br>
+                <br>
+                <input input type="text" id="tray5" name="tray5">
+                <label for="sm-trays">Tray 5</label><br><br>
+                <input type="submit" id="submit-button" value="Submit"><br>
+            </form>
+        </div>
+        <div id="loaded-tray-weight">
+            <h3>Trays Weight After Freeze Drying</h3><br>
+            <div id="total-weight">Total Weight Is:</div>
+        </div>
+<script src="script.js"></script>
+    </body>
+</html>

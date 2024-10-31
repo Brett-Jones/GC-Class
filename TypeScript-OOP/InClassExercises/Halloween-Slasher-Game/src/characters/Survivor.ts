@@ -31,7 +31,7 @@ export class Survivor {
     }
 
     superPower(): void{
-        console.log(`This is even my final form: LEROY JENKINSSSSS!!!!!!`)
+        console.log(`This is even my final form: LEROY JENKINS!!!!!!`)
     }
 
 }

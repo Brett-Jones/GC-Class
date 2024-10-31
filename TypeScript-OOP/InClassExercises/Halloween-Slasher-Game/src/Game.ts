@@ -1,5 +1,5 @@
 
-import { Slasher, Survivor } from "./charcters";
+import { Slasher, Survivor } from "./characters";
 import { Chainsaw, Knife } from "./weapons";
 
 export class Game {

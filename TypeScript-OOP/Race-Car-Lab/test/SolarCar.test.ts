@@ -25,4 +25,4 @@ describe("SolarCar", () => {
         const fuelCheck = car.isFuelEmpty()
         expect(fuelCheck).toBe(false)
     })
-})
+});

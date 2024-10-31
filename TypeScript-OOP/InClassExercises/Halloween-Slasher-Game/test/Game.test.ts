@@ -1,5 +1,5 @@
 
-import { Slasher, Survivor } from "../src/charcters";
+import { Slasher, Survivor } from "../src/characters";
 import { Knife } from "../src/weapons";
 
 describe('Slasher Class', () =>{
