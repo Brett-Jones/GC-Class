@@ -1,0 +1,22 @@
+
+.header{
+    background-color: forestgreen;
+    color: white;
+    text-size-adjust: center;
+    padding: 1rem 0;
+
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+
+
+
