@@ -1,0 +1,38 @@
+
+.map {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates 5 columns */
+    gap: 5px; /* Adds spacing between tiles */
+    margin: 20px;
+    width: 300px; /* Adjust based on your preference */
+
+  }
+
+
+  .fullPage{
+    display: flex;
+    flex-direction: column;
+  }
+  
+h2{
+    border-radius: 5px;
+    background-color:dimgray;
+    border: 3px solid cyan;
+    padding: 3px;
+}
+
+/* Code below is for desktop */
+  @media (min-width: 768px) {
+
+    .h2{color: blueviolet;}
+
+    .map{
+      background-color: aqua;
+    }
+
+
+}
+
+
+
+

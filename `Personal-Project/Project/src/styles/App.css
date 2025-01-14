@@ -1,0 +1,15 @@
+.app {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-image: url('farm-background.jpg');
+  }
+  
+  
+
+
+
+
+
